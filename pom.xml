@@ -26,6 +26,14 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <mainClass>nl.knaw.dans.Test</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -33,8 +41,8 @@
         <dependency>
             <groupId>gov.loc</groupId>
             <artifactId>bagit</artifactId>
-            <!--<version>5.1.0</version>-->
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.1.0</version>
+            <!--<version>5.0.0-SNAPSHOT</version>-->
         </dependency>
     </dependencies>
 </project>
